@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "chatbot-api"
+version = "0.1.0"
+description = ""
+authors = ["Akihiro Inui <mail@akihiroinui.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.101.0"
+open_clip_torch ="2.23.0"
+transformers = "4.35.2"
+python-decouple = "^3.8"
+pytz = "^2023.3"
+openai = "^0.27.8"
+slowapi = "^0.1.8"
+pymongo = "^4.4.1"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+python-multipart = "^0.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
